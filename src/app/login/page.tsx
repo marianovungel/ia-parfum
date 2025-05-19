@@ -190,7 +190,7 @@ const LoginPage = () => {
           </div>
         )}
         <button
-          className="bg-lama text-white p-2 rounded-md disabled:bg-pink-200 disabled:cursor-not-allowed"
+          className="bg-gray text-white p-2 rounded-md disabled:bg-pink-200 disabled:cursor-not-allowed"
           disabled={isLoading}
         >
           {isLoading ? "Loading..." : buttonTitle}
@@ -201,7 +201,7 @@ const LoginPage = () => {
             className="text-sm underline cursor-pointer"
             onClick={() => setMode(MODE.REGISTER)}
           >
-            {"Don't"} Tem conta?
+            {"Don't"} have an account?
           </div>
         )}
         {mode === MODE.REGISTER && (
@@ -217,7 +217,7 @@ const LoginPage = () => {
             className="text-sm underline cursor-pointer"
             onClick={() => setMode(MODE.LOGIN)}
           >
-            Voltar para Login
+            Go back to Login
           </div>
         )}
         {message && <div className="text-green-600 text-sm">{message}</div>}
